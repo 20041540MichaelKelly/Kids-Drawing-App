@@ -100,5 +100,10 @@ class DrawingView(context: Context, attrs : AttributeSet) : View(context, attrs)
 
     }
 
+    fun setColor(newColour:String) {
+        color = Color.parseColor(newColour)
+        mDrawPaint!!.color = color
+    }
+
 
 }
